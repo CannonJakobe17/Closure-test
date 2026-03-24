@@ -40,29 +40,21 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #0a0a0a, #111);
-  text-align: center;
+  background: url('https://images.unsplash.com/photo-1516826957135-700dedea698c') center/cover;
+  position: relative;
 }
 
-.hero h1 {
-  font-size: 60px;
-  margin: 0;
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
 }
 
-.hero p {
-  color: #aaa;
+.hero h1, .hero p, .hero button {
+  position: relative;
+  z-index: 1;
 }
-
-.hero button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  border: none;
-  background: #d4af37;
-  color: black;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
 /* SECTION */
 .section {
   padding: 80px 40px;
