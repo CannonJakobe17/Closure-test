@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shop - Closure</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0a0a0a;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  color: #d4af37;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.products {
+  padding: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #d4af37;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Closure</div>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<div class="products">
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200">
+    <h3>Closure Hoodie</h3>
+    <p>$60</p>
+    <button onclick="window.location.href='https://yourshopifystore.com/product1'">
+      Buy Now
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200">
+    <h3>Closure Tee</h3>
+    <p>$35</p>
+    <button onclick="window.location.href='https://yourshopifystore.com/product2'">
+      Buy Now
+    </button>
+  </div>
+
+</div>
+
+</body>
+</html>
