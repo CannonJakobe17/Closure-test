@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
+<meta charset="UTF-8">
+<title>Closure</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #0a0a0a;
+  color: #f8f8f8;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: transparent;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+nav a {
+  color: #f8f8f8;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #0a0a0a, #111);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.hero p {
+  color: #aaa;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #d4af37;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
-  <h1>My First GitHub Website 🚀</h1>
-  <p>If you see this online, you did it.</p>
+
+<header>
+  <div class="logo">Closure</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Closure</h1>
+  <p>Define your look. Complete your story.</p>
+  <button onclick="location.href='shop.html'">Shop Now</button>
+</div>
+
+<div class="section">
+  <h2>Featured Pieces</h2>
+  <div class="cards">
+    <div class="card">Premium Hoodies</div>
+    <div class="card">Streetwear Sets</div>
+    <div class="card">Accessories</div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Closure. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
