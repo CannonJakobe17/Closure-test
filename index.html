@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Closure</title>
+
+<!-- Font -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+/* --- GENERAL --- */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -13,7 +16,8 @@ body {
   background: #0a0a0a;
   color: #f8f8f8;
 }
-/* NAVBAR */
+
+/* --- NAVBAR --- */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,22 +29,29 @@ header {
   font-weight: 600;
   letter-spacing: 2px;
   color: #d4af37;
+  font-size: 28px;
 }
 
 nav a {
-  color: #f8f8f8;
+  color: white;
   text-decoration: none;
   margin-left: 20px;
+  font-weight: 400;
+  transition: 0.3s ease;
 }
 
-/* HERO */
+nav a:hover {
+  color: #d4af37;
+}
+
+/* --- HERO --- */
 .hero {
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('https://images.unsplash.com/photo-1516826957135-700dedea698c') center/cover;
+  background: url('https://images.unsplash.com/photo-1600181956686-1f6cb0a1b986?auto=format&fit=crop&w=1950&q=80') center/cover;
   position: relative;
 }
 
@@ -48,14 +59,50 @@ nav a {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.5);
 }
 
 .hero h1, .hero p, .hero button {
   position: relative;
   z-index: 1;
+  text-align: center;
 }
-/* SECTION */
+
+/* Hero text */
+.hero h1 {
+  font-size: 60px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* Shop Now Button */
+.hero button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  border: 2px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.hero button:hover {
+  background: #d4af37;
+  color: black;
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 8px 20px rgba(212,175,55,0.3);
+}
+
+/* --- FEATURE CARDS --- */
 .section {
   padding: 80px 40px;
   text-align: center;
@@ -83,12 +130,14 @@ nav a {
   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
 }
 
-/* FOOTER */
+/* --- FOOTER --- */
 footer {
   text-align: center;
   padding: 30px;
   background: #111;
   margin-top: 40px;
+  font-size: 14px;
+  color: #aaa;
 }
 </style>
 </head>
@@ -105,7 +154,7 @@ footer {
 
 <div class="hero">
   <h1>Closure</h1>
-  <p>Everyone needs Closure from something.</p>
+  <p>Define your look. Complete your story.</p>
   <button onclick="location.href='shop.html'">Shop Now</button>
 </div>
 
