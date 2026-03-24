@@ -8,7 +8,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-/* --- GENERAL --- */
+:root {
+  --hero-bg: url('https://images.unsplash.com/photo-1600181956686-1f6cb0a1b986?auto=format&fit=crop&w=1950&q=80');
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -17,7 +20,6 @@ body {
   color: #f8f8f8;
 }
 
-/* --- NAVBAR --- */
 header {
   display: flex;
   justify-content: space-between;
@@ -44,14 +46,14 @@ nav a:hover {
   color: #d4af37;
 }
 
-/* --- HERO --- */
+/* HERO */
 .hero {
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('https://images.unsplash.com/photo-1600181956686-1f6cb0a1b986?auto=format&fit=crop&w=1950&q=80') center/cover;
+  background: var(--hero-bg) center/cover no-repeat;
   position: relative;
 }
 
@@ -68,7 +70,6 @@ nav a:hover {
   text-align: center;
 }
 
-/* Hero text */
 .hero h1 {
   font-size: 60px;
   margin: 0;
@@ -81,7 +82,7 @@ nav a:hover {
   color: #ddd;
 }
 
-/* Shop Now Button */
+/* SHOP NOW BUTTON */
 .hero button {
   margin-top: 25px;
   padding: 14px 30px;
@@ -102,7 +103,7 @@ nav a:hover {
   box-shadow: 0 8px 20px rgba(212,175,55,0.3);
 }
 
-/* --- FEATURE CARDS --- */
+/* FEATURE CARDS */
 .section {
   padding: 80px 40px;
   text-align: center;
@@ -130,7 +131,6 @@ nav a:hover {
   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
 }
 
-/* --- FOOTER --- */
 footer {
   text-align: center;
   padding: 30px;
