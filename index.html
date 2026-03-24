@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Closure</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
   background: #0a0a0a;
   color: #f8f8f8;
 }
-
 /* NAVBAR */
 header {
   display: flex;
@@ -21,8 +22,8 @@ header {
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: #d4af37;
 }
 
@@ -77,14 +78,17 @@ nav a {
 
 .card {
   background: #111;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 12px;
   width: 250px;
-  transition: 0.3s;
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px) scale(1.02);
+  border: 1px solid #d4af37;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
 }
 
 /* FOOTER */
