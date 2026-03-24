@@ -3,41 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <title>Shop - Closure</title>
+
+<!-- Font -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+/* --- GENERAL --- */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.5px;
   background: #0a0a0a;
-  color: #f8f8f8;
+  color: white;
 }
-  
+
+/* --- NAVBAR --- */
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
+  background: transparent;
 }
 
 .logo {
+  color: #d4af37;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #d4af37;
+  font-size: 28px;
 }
 
 nav a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
+  font-weight: 400;
+  transition: 0.3s ease;
 }
 
+nav a:hover {
+  color: #d4af37;
+}
+
+/* --- PRODUCTS SECTION --- */
 .products {
-  padding: 50px;
+  padding: 60px 40px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  background: url('https://images.unsplash.com/photo-1600181956686-1f6cb0a1b986?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+}
+
+.product {
+  background: #111;
+  padding: 15px;
+  border-radius: 12px;
+  width: 230px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 .product img {
@@ -53,13 +81,23 @@ nav a {
   opacity: 0.9;
 }
 
+.product h3 {
+  font-weight: 400;
+  margin: 10px 0 5px;
+}
+
+.product p {
+  color: #d4af37;
+}
+
 button {
-  margin-top: 15px;
-  padding: 12px 25px;
+  margin-top: 10px;
+  padding: 10px;
   background: transparent;
   color: #d4af37;
   border: 1px solid #d4af37;
   cursor: pointer;
+  border-radius: 5px;
   transition: all 0.3s ease;
 }
 
@@ -82,21 +120,17 @@ button:hover {
 <div class="products">
 
   <div class="product">
-   <img src="https://hourscollection.com/cdn/shop/files/DropShoulderHoodie-VintageBlack-ClipTag2_1000x.png?v=1762199711">
+    <img src="https://images.unsplash.com/photo-1623054861039-27257f0f920f?auto=format&fit=crop&w=800&q=80">
     <h3>Closure Hoodie</h3>
     <p>$60</p>
-    <button onclick="window.location.href='https://yourshopifystore.com/product1'">
-      Buy Now
-    </button>
+    <button onclick="window.location.href='https://yourshopifystore.com/product1'">Buy Now</button>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200">
+    <img src="https://images.unsplash.com/photo-1614280229437-c7a29d4db0b0?auto=format&fit=crop&w=800&q=80">
     <h3>Closure Tee</h3>
     <p>$35</p>
-    <button onclick="window.location.href='https://yourshopifystore.com/product2'">
-      Buy Now
-    </button>
+    <button onclick="window.location.href='https://yourshopifystore.com/product2'">Buy Now</button>
   </div>
 
 </div>
